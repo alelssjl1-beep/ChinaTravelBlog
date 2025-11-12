@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .article-card {
+            padding: 1.5rem;
+            height: 100%;
+        }
+        .article-img {
+            height: 100%;
+            object-fit: cover; 
+        }
+        .btn{
+            background-color: #f5f5f5;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../homepage/logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link align-bottom" aria-current="page" href="../homepage/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../start:click_here_page/start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="heritage_monuments_page/categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-3">
+        <h1 class="text-center mb-5 fw-bold display-5">CATEGORIES</h1>
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card article-card">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <img src="administrative-divisions-china.jpg" class="img-fluid rounded article-img" alt="Destinations">
+                        </div>
+                        <div class="col-md-8 d-flex flex-column justify-between">
+                            <div>
+                                <h3 class="card-title">Destinations</h3>
+                                <h6 class="card-text text-muted mt-2">As we talked about, this currently focuses on Mainland China’s 7 geographic regions. Click a region, then pick a city—each city page dives deep into its heritage, nature, food, and more. (Stay tuned for Hong Kong, Macao, and Taiwan content!)</h6>
+                            </div>
+                            <a href="destinations_page/categories_destinations.html" class="btn btn-primary w-50 mx-auto mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card article-card">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <img src="cultural-heritage-sites.webp" class="img-fluid rounded article-img" alt="Heritage & Monuments">
+                        </div>
+                        <div class="col-md-8 d-flex flex-column justify-between">
+                            <div>
+                                <h3 class="card-title">Heritage & Monuments</h3>
+                                <br>
+                                <h6 class="card-text text-muted mt-2">Want to learn about the Great Wall, Forbidden City, or ancient Mainland China temples? This is your go-to.</h6>
+                            </div>
+                            <a href="heritage_monuments_page/categories_heritage_mounments.html" class="btn btn-primary w-50 mx-auto mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card article-card">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <img src="nature.jpg" class="img-fluid rounded article-img" alt="Nature & Scenery">
+                        </div>
+                        <div class="col-md-8 d-flex flex-column justify-between">
+                            <div>
+                                <h3 class="card-title">Nature & Scenery</h3>
+                                <h6 class="card-text text-muted mt-2">From Zhangjiajie’s otherworldly mountains to Jiuzhaigou’s colorful lakes—all of Mainland China’s breathtaking natural spots live here.</h6>
+                            </div>
+                            <a href="nature_scenery_page/categories_nature_scenery.html" class="btn btn-primary w-50 mx-auto mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card article-card">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <img src="food.webp" class="img-fluid rounded article-img" alt="Food">
+                        </div>
+                        <div class="col-md-8 d-flex flex-column justify-between">
+                            <div>
+                                <h3 class="card-title">Food</h3>
+                                <h6 class="card-text text-muted mt-2">Dumplings, noodles, hot pot, dim sum… Mainland China’s food scene is endless, and this category is your ultimate gastronomic guide.</h6>
+                            </div>
+                            <a href="food_page/categories_food.html" class="btn btn-primary w-50 mx-auto mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tianjin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+        .sidebar-card {
+            background-size: cover;
+            background-position: center;
+            min-height: 180px;
+            position: relative;
+        }
+        .sidebar-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5); /* 提升文字可读性 */
+            z-index: 1;
+        }
+        .sidebar-card .card-body {
+            position: relative;
+            z-index: 2;
+        }
+        .right22{
+            top: 120px;
+        }
+        .tip-box {
+            border: 1px solid #e9ecef;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            background-color: #f8f9fa;
+        }
+        .tip-title {
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../../../homepage/logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link align-bottom" aria-current="page" href="../../../../homepage/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../../start:click_here_page/start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../blog_categories_page/destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../../../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="../../../../blog_categories_page/nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="../../../../blog_categories_page/food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../../../../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../../../../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../../../../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../../../../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <h1 class="text-center fw-bold mb-3 p-3">Tianjin (North China) - Where East Meets West by the Sea</h1>
+                <div id="blogCarousel" class="carousel slide mb-6" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="1" aria-label="image2"></button>
+                        <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="2" aria-label="iamge3"></button>
+                    </div>
+                    <div class="carousel-inner rounded-3 overflow-hidden">
+                        <div class="carousel-item active">
+                            <img src="TJ_monuments/Ancient_Culture_Street_entrance.jpg" class="d-block w-100" alt="image1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="TJ_food/goubuli.jpeg" class="d-block w-100" alt="image2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="TJ_nature/panshan.jpg" class="d-block w-100" alt="image3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="mb-6">
+                    <p class="lead text-muted">Nestled along the Bohai Sea, Tianjin is a North China gem just 30 minutes by high-speed train from Beijing—and it’s a city of delightful contrasts. Walk its streets, and you’ll stumble upon red-brick European villas from its days as a foreign concession, right next to traditional hutongs where vendors sell steaming goubuliu baozi (steamed pork buns). The Haihe River winds through its heart, lighting up at night with glowing bridges and waterfront cafes, while ancient temples like Dule Temple stand as quiet testaments to its 600-year history. Whether you’re savoring crispy fried dough twists, cruising the river at dusk, or exploring cobblestone squares in the Italian Concession, Tianjin blends old-world charm and cross-cultural flair in every corner.</p>
+                    <p class="lead text-muted">Tianjin’s history shines brightest in its iconic sites. The Ancient Culture Street, a 600-meter stretch of traditional Chinese architecture, feels like a step back in time—here, you can visit Tianhou Palace (a temple honoring the sea goddess, built in 1326), watch artisans carve clay figurines, and listen to folk acrobatics shows on weekends. A short drive away, the Italian Concession Area is a little slice of Europe: Marco Polo Square’s fountain, pastel-colored villas, and outdoor cafes make it perfect for afternoon strolls and photos. For a deeper dive into ancient history, Dule Temple (built in 984 AD) is a must—it’s one of China’s oldest preserved Buddhist temples, home to a 10-meter-tall wooden Guanyin statue that’s stood for over a millennium.</p>
+                </div>
+                <div class="row mb-6 g-4">
+                    <div class="col-md-6">
+                        <img src="TJ_food/mahua.jpg" class="img-fluid rounded-3" alt="image1">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div>
+                            <p class="text-secondary">When you want to escape the city buzz, Tianjin’s natural spots offer calm and beauty. A cruise along the Haihe River is a highlight—especially at night, when bridges like Jiefang Bridge glow with neon lights and the European-style buildings along the banks reflect in the water. Panshan Mountain, 120 kilometers from the city center, is a scenic retreat with pine forests, waterfalls, and ancient temples; hike to its peak for sweeping views of the surrounding countryside, or relax by Yunmen Temple’s tranquil ponds. Back in the city, Tianjin Water Park (the largest urban park here) is ideal for families—rent a paddle boat on its three lakes, walk through lotus-filled gardens, or have a picnic under willow trees on a sunny day.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div>
+                            <p class="text-secondary">No trip to Tianjin is complete without tasting its famous snacks. Goubuliu Baozi, the city’s most iconic food, are soft steamed buns filled with juicy minced pork and broth—legend says they were invented by a boy named “Goubuliu” (meaning “dog doesn’t care”) who was so focused on making buns, he ignored his dog! Erduoyan Fried Dough Twists are another must: crispy, twisted sticks coated in sesame or sugar, perfect for munching on the go. And for something heartier, try mahua (fried dough twists) with a savory twist—sold at street stalls, they’re crunchy outside, fluffy inside, and pair great with a cup of hot tea.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="TJ_nature/tainjinwater.jpg" class="img-fluid rounded-3" alt="image2">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="fw-bold mb-3">Travel Tips for Chongqing</h3>
+                    <div class="tip-box">
+                        <h5 class="text-dark">Best Time to Visit:</h5>
+                        <p class="text-dark">Tip 1: Spring (March–May) and autumn (September–November) are ideal. Temperatures range from 10–22°C (50–72°F), with mild weather and fewer crowds. Summer (30+°C/86+°F) is hot but great for river cruises; winter (0–10°C/32–50°F) is cool and quiet.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h5 class="text-dark">Transportation:</h5>
+                        <p class="text-dark mb-2">Tip 1: Take a high-speed train from Beijing South Station to Tianjin (30 minutes, 54–65 CNY). In the city, use bike-sharing apps (cheap and convenient) or the subway (covers major spots like Ancient Culture Street and the Water Park); taxis start at 8 CNY for short trips.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h5 class="text-dark">Essential Tips:</h5>
+                        <p class="text-dark">Tip 1: Try goubuliu baozi at the original shop on Ancient Culture Street (look for the long line!). </p>
+                        <p class="text-dark">Tip 2: Visit the Italian Concession in the afternoon—sunlight makes the villas look even more vibrant. </p>
+                        <p class="text-dark">Tip 3: Bring comfortable shoes for walking—many historic areas are best explored on foot.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sticky-top top-4 right22">
+                    <div class="card sidebar-card text-white mb-4 rounded-3">
+                        <div class="card-body" style="background-image: url('TJ_monuments/Italian_Concession_of_Tientsin._Piazza_Regina_Elena_and_WWI_monument..jpg');">
+                            <h3 class="card-title fw-bold mb-3">Heritage & Monuments</h3>
+                            <h6 class="card-text mb-4">Top 3 Historic Sites in Tianjin</h6>
+                            <a href="TJ_monuments/TJ_monuments.html" class="btn btn-light btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card sidebar-card text-white mb-4 rounded-3">
+                        <div class="card-body" style="background-image: url('TJ_nature/tianjin-haihe-river-tourism.jpg');">
+                            <h3 class="card-title fw-bold mb-3">Nature & Scenery</h3>
+                            <h6 class="card-text mb-4">Top 3 Nature Spots in Tianjin</h6>
+                            <a href="TJ_nature/TJ_nature.html" class="btn btn-light btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card sidebar-card text-white rounded-3">
+                        <div class="card-body" style="background-image: url('TJ_food/savory.jpg');">
+                            <h3 class="card-title fw-bold mb-3">Food</h3>
+                            <h6 class="card-text mb-4">Top 3 Food in Tianjin</h6>
+                            <a href="TJ_food/TJ_food.html" class="btn btn-light btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage & Monuments</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .article-card {
+            border-radius: 12px; 
+            transition: box-shadow 0.3s ease;
+        }
+        .article-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .article-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        .article-link:hover .card-title {
+            color: #0d6efd;
+        }
+        .page{
+            margin-top: 20px;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+  </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../homepage/logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link align-bottom" aria-current="page" href="../../homepage/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../start:click_here_page/start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="../nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="../food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <div class="text-center mb-6">
+            <h1 class="display-5 fw-bold">Heritage & Monuments</h1>
+            <p class="text-muted fs-6">All posts under this category</p>
+        </div>
+        <div class="row g-4 mb-8">
+            <div class="col-12">
+                <a href="../destinations_page/North_China_page/Beijing/BJ_monuments/BJ_monuments.html" class="article-link">
+                    <div class="card article-card p-4 border">
+                        <h5 class="card-title mb-0">Beijing Top 3 Historic Sites</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12">
+                <a href="../destinations_page/North_China_page/Tianjin/TJ_monuments/TJ_monuments.html" class="article-link">
+                    <div class="card article-card p-4 border">
+                        <h5 class="card-title mb-0">Tianjin Top 3 Historic Sites</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12">
+                <a href="../destinations_page/North_China_page/Taiyuan/TY_monuments/TY_monuments.html" class="article-link">
+                    <div class="card article-card p-4 border">
+                        <h5 class="card-title mb-0">Taiyuan Top 3 Historic Sites</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12">
+                <a href="../destinations_page/Northeast_China_page/Harbin/HEB_monuments/HEB_monuments.html" class="article-link">
+                    <div class="card article-card p-4 border">
+                        <h5 class="card-title mb-0">Harbin Top 3 Historic Sites</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12">
+                <a href="../destinations_page/Northeast_China_page/Changchun/CC_monuments/CC_monuments.html" class="article-link">
+                    <div class="card article-card p-4 border">
+                        <h5 class="card-title mb-0">Changchun Top 3 Historic Sites</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12">
+                <a href="../destinations_page/Northeast_China_page/Shenyang/SY_monuments/SY_monuments.html" class="article-link">
+                    <div class="card article-card p-4 border">
+                        <h5 class="card-title mb-0">Shenyang Top 3 Historic Sites</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12">
+                <a href="../destinations_page/East_China_page/Shanghai/SH_monuments/SH_monuments.html" class="article-link">
+                    <div class="card article-card p-4 border">
+                        <h5 class="card-title mb-0">Shanghai Top 3 Historic Sites</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12">
+                <a href="../destinations_page/East_China_page/Hangzhou/HZ_monuments/HZ_monuments.html" class="article-link">
+                    <div class="card article-card p-4 border">
+                        <h5 class="card-title mb-0">Hangzhou Top 3 Historic Sites</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <nav aria-label="Page navigation" class="page">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="categories_heritage_mounments2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="categories_heritage_mounments3.html">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="categories_heritage_mounments2.html">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haikou Top 3 Historic Sites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .section-box {
+            border-radius: 16px;
+            border: 1px solid #e9ecef;
+            transition: box-shadow 0.3s ease;
+        }
+        .section-box:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+        .scrollspy-content {
+            max-height: 300px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+        }
+        .scrollspy-nav .nav-link.active {
+            color: #0d6efd;
+            font-weight: 500;
+            border-left: 3px solid #0d6efd;
+        }
+        .scrollspy-nav .nav-link {
+            color: #495057;
+            border-left: 3px solid transparent;
+            transition: all 0.2s ease;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../../../../homepage/logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link align-bottom" aria-current="page" href="../../../../../homepage/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../../../start:click_here_page/start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../../../../../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../../../../../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-3">
+        <div class="text-center mb-8">
+            <h1 class="display-5 fw-bold mb-3">Top 3 Historic Sites in Haikou</h1>
+        </div>
+        <div class="section-box p-5 mb-8">
+            <h2 class="h4 fw-bold mb-4">Qilou Old Street (Arcade Street)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="qilou.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image1">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-1" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy1-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy1-2">Best Time to Visit</a>
+                                <a class="nav-link mb-2" href="#spy1-3">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-1" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy1-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Qilou Old Street, in Haikou’s old town, is a 1.4-kilometer-long street lined with 100+ “qilou” buildings—colonial-style arcade structures built in the late 19th to early 20th centuries (a mix of Chinese, French, and Southeast Asian architecture). The buildings have ground-floor arcades (to shelter pedestrians from sun and rain) and upper floors with colorful facades and wooden balconies. Once a busy maritime trade hub (merchants sold spices, silk, and seafood here), today the street is filled with local shops (selling coconut candy, Hainanese tea), street food stalls, and small museums (e.g., the “Haikou Qilou Culture Museum”). Walk along the street to admire the well-preserved buildings, taste Hainanese snacks, and snap photos of the vintage signs.</p>
+                                </div>
+                                <div id="spy1-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Best Time to Visit</h5>
+                                    <p class="text-sm text-muted">Evening (6:00 PM–8:00 PM): Street lights turn on; stalls open for dinner; lively but not crowded.</p>
+                                    <p class="text-sm text-muted">Winter (November–February): Cool weather for walking.</p>
+                                </div>
+                                <div id="spy1-3">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted">Entry Fee: Free (the street is open to the public).</p>
+                                    <p class="text-sm text-muted">Qilou Culture Museum: 15 CNY/adult; 8 CNY/students.</p>
+                                    <p class="text-sm text-muted">Street Food: 5–15 CNY/snack (e.g., coconut rice, grilled squid).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-box p-5 mb-8">
+            <h2 class="h4 fw-bold mb-4">Haikou Museum (Former Imperial Examination Hall)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="former.webp" class="img-fluid rounded-4 shadow-sm w-100" alt="image2">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-2" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy2-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy2-2">Best Time to Visit</a>
+                                <a class="nav-link mb-2" href="#spy2-3">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy2-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Haikou Museum is housed in the “Haikou Imperial Examination Hall”—a Qing Dynasty (1636–1912) building that once served as a venue for imperial exams (tests for scholars to enter government service). The museum covers 1,500 square meters and has two main sections: the “Imperial Examination Exhibition” (with ancient exam papers, inkstones, and scholar robes) and the “Haikou History Exhibition” (with artifacts from Haikou’s maritime trade, including old porcelain and navigation tools). The building itself is a historic treasure: it has traditional Chinese courtyards, wooden halls with carved beams, and a “Wenchang Pavilion” (a small tower symbolizing literacy). It’s a quiet spot to learn about Haikou’s educational and cultural history.</p>
+                                </div>
+                                <div id="spy2-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Best Time to Visit</h5>
+                                    <p class="text-sm text-muted">Morning (10:00 AM–11:30 AM): Quiet; good for reading exhibition labels.</p>
+                                    <p class="text-sm text-muted">Year-round: Indoor (22°C–25°C), comfortable in all seasons.</p>
+                                </div>
+                                <div id="spy2-3">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted">Entry Fee: 20 CNY/adult; 10 CNY/students; free for kids under 1.2m.</p>
+                                    <p class="text-sm text-muted"> Audio Guide: 15 CNY/rental (available in English and Chinese).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-box p-5">
+            <h2 class="h4 fw-bold mb-4">Xiuying Fort</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="xiuying.webp" class="img-fluid rounded-4 shadow-sm w-100" alt="image3">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-3" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy3-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy3-2">Best Time to Visit</a>
+                                <a class="nav-link mb-2" href="#spy3-3">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-3" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy3-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Xiuying Fort, on Haikou’s western coast, is a Ming Dynasty (1368–1644) military fortress built to defend Hainan’s coast against pirates and foreign invaders. The fortress covers 10,000 square meters and includes three main parts: the “Fortress Wall” (a 2-meter-thick stone wall that circles the site), the “Cannon Platform” (where 10+ ancient bronze cannons are displayed), and the “Command Post” (a small building where military leaders planned defenses). The fort played an important role in Haikou’s history—during the Opium Wars (19th century), it was used to resist British warships. Today, you can climb the fortress wall for views of Haikou Bay, touch the ancient cannons, and read signs about the fort’s military history.</p>
+                                </div>
+                                <div id="spy3-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Best Time to Visit</h5>
+                                    <p class="text-sm text-muted">Afternoon (2:00 PM–4:00 PM): Good light for photos of the cannons and sea views.</p>
+                                    <p class="text-sm text-muted">Winter (December–January): Cool breeze from the sea.</p>
+                                </div>
+                                <div id="spy3-3">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted">Entry Fee: 15 CNY/adult; 8 CNY/students; free for kids under 1.2m.</p>
+                                    <p class="text-sm text-muted">Guided Tour (1 hour): 40 CNY/group (includes stories about the fort’s battles).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>

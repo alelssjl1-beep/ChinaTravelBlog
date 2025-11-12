@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changsha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+        .sidebar-card {
+            background-size: cover;
+            background-position: center;
+            min-height: 180px;
+            position: relative;
+        }
+        .sidebar-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5); /* 提升文字可读性 */
+            z-index: 1;
+        }
+        .sidebar-card .card-body {
+            position: relative;
+            z-index: 2;
+        }
+        .right22{
+            top: 120px;
+        }
+        .tip-box {
+            border: 1px solid #e9ecef;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            background-color: #f8f9fa;
+        }
+        .tip-title {
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../../../homepage/logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link align-bottom" aria-current="page" href="../../../../homepage/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../../start:click_here_page/start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../blog_categories_page/destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../../../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="../../../../blog_categories_page/nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="../../../../blog_categories_page/food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../../../../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../../../../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../../../../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../../../../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <h1 class="text-center fw-bold mb-3 p-3">Changsha Travel Blog: Fall in Love with This Spicy, Historic & Scenic Gem</h1>
+                <div id="blogCarousel" class="carousel slide mb-6" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="1" aria-label="image2"></button>
+                        <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="2" aria-label="iamge3"></button>
+                    </div>
+                    <div class="carousel-inner rounded-3 overflow-hidden">
+                        <div class="carousel-item active">
+                            <img src="CS_monuments/mawangdui.jpeg" class="d-block w-100" alt="image1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="CS_nature/juzizhoutou.jpg" class="d-block w-100" alt="image2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="CS_food/choudoufu.jpg" class="d-block w-100" alt="image3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="mb-6">
+                    <p class="lead text-muted">Changsha, the capital of Hunan Province and known locally as the “Star City,” isn’t just a stop on a China itinerary—it’s a destination that seeps into your senses. Over 5 days here, I ate my way through street stalls where the air smelled of chili and stinky tofu, wandered ancient academies where scholars once debated, and hiked mountains with views of the winding Xiang River. What makes Changsha special is its unapologetic energy: modern skyscrapers glow next to 1,000-year-old pavilions, and locals laugh loudly over bowls of spicy crayfish as night falls. It’s a city that honors its past while embracing the present, and by the end of my trip, I found myself already planning a return.</p>
+                </div>
+                <div class="row mb-6 g-4">
+                    <div class="col-md-6">
+                        <img src="CS_monuments/tianxin.jpg" class="img-fluid rounded-3" alt="image1">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div>
+                            <p class="text-secondary">My days in Changsha were a mix of slow exploration and delicious indulgence. I’d start mornings with a bowl of beef noodle soup, its broth rich and fiery enough to wake me up. Middays were spent tracing history—from the well-preserved Han Dynasty tombs to the serene courtyards of China’s oldest academies. Afternoons called for nature: hiking Yuelu Mountain to catch a sunset over the city, or cycling along Orange Isle with the Xiang River breeze in my hair. Evenings? They belonged to street food—crunchy stinky tofu, juicy spicy crayfish, and sweet osmanthus cakes from vendors that stayed busy till midnight.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div>
+                            <p class="text-secondary">Below, you’ll find my full breakdown of the trip, plus detailed guides to the three historic sites, three natural spots, and three must-try foods that made my Changsha adventure unforgettable.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="CS_food/niurou.jpeg" class="img-fluid rounded-3" alt="image2">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="fw-bold mb-3">Travel Tips for Changsha</h3>
+                    <div class="tip-box">
+                        <h5 class="text-dark">Best Time to Visit:</h5>
+                        <p class="text-dark">Tip 1: Spring (March–May): Mild temperatures (12°C–22°C), blooming cherry blossoms at Orange Isle, and fewer crowds—ideal for outdoor activities like hiking Yuelu Mountain.</p>
+                        <p class="text-dark">Tip 2: Autumn (September–November): Crisp air (15°C–25°C), clear skies for river views, and Hunan’s famous chili harvest season—perfect for trying spicy local dishes.</p>
+                        <p class="text-dark">Tip 3: Avoid Summer (June–August): Sweltering heat (30°C–38°C) and heavy rain; winter (December–February) is cool (5°C–12°C) but quiet, great for museum visits.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h5 class="text-dark">Transportation:</h5>
+                        <p class="text-dark mb-2">Tip 1: Getting to Changsha:</p>
+                        <p class="text-dark mb-4"> Fly to Changsha Huanghua International Airport (CSX)—take the maglev train to the city center (18 mins, 20 CNY) or a taxi (40 mins, ~80 CNY). High-speed trains from Guangzhou (1.5 hours, ~180 CNY) or Wuhan (2.5 hours, ~250 CNY) are also convenient.</p>
+                        <p class="text-dark mb-2">Tip 2: Getting Around:</p>
+                        <p class="text-dark mb-1">Metro: Lines 1–6 cover major attractions (e.g., Orange Isle, Mawangdui Tombs); a single ride costs 2–5 CNY.</p>
+                        <p class="text-dark mb-1">Bikes: Rent a shared bike (2 CNY/30 mins) to explore Orange Isle or Yanghu Wetland—bike lanes are well-marked. </p>
+                        <p class="text-dark mb-2">Taxis/Didi: Taxis start at 8 CNY; Didi is cheaper for late-night rides (e.g., from Huangxing Road Pedestrian Street to your hotel).</p>
+                      
+                    </div>
+                    <div class="tip-box">
+                        <h5 class="text-dark">Essential Tips:</h5>
+                        <p class="text-dark">Tip 1: Ask for “Less Spice”: Hunan cuisine is notoriously spicy—most restaurants will adjust the heat if you say “shǎo là” or “wú là” (no spice).</p>
+                        <p class="text-dark">Tip 2: Carry Cash for Street Food: Many small stalls only accept cash (CNY)—keep 50–100 CNY on hand for snacks like stinky tofu or sugar cakes.</p>
+                        <p class="text-dark">Tip 3: Book Yuelu Academy Tickets Early: During peak seasons, the academy limits visitors—reserve tickets 1 day in advance via its official WeChat account.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sticky-top top-4 right22">
+                    <div class="card sidebar-card text-white mb-4 rounded-3">
+                        <div class="card-body" style="background-image: url('CS_monuments/yuelu.jpg');">
+                            <h3 class="card-title fw-bold mb-3">Heritage & Monuments</h3>
+                            <h6 class="card-text mb-4">Top 3 Historic Sites in Changsha</h6>
+                            <a href="CS_monuments/CS_monuments.html" class="btn btn-light btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card sidebar-card text-white mb-4 rounded-3">
+                        <div class="card-body" style="background-image: url('CS_nature/yuelushan.jpg');">
+                            <h3 class="card-title fw-bold mb-3">Nature & Scenery</h3>
+                            <h6 class="card-text mb-4">Top 3 Nature Spots in Changsha</h6>
+                            <a href="CS_nature/CS_nature.html" class="btn btn-light btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card sidebar-card text-white rounded-3">
+                        <div class="card-body" style="background-image: url('CS_food/xiaolongxia.webp');">
+                            <h3 class="card-title fw-bold mb-3">Food</h3>
+                            <h6 class="card-text mb-4">Top 3 Food in Changsha</h6>
+                            <a href="CS_food/CS_food.html" class="btn btn-light btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>

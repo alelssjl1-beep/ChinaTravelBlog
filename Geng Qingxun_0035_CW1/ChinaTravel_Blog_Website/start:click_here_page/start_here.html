@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+        .right2{
+            top: 130px;
+        }
+        </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../homepage/logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link align-bottom" aria-current="page" href="../homepage/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../blog_categories_page/destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="../blog_categories_page/nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="../blog_categories_page/food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-8">
+                <article>
+                    <h1 class="fw-bold mb-3">Start Here: Your Guide to ChinaTravel Blog</h1>
+                    <p class="text-muted mb-3">Posted on <span class="text-primary">June 14, 2025</span> by <span class="text-primary">Alessia Geng</span></p>
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img src="image1.webp" alt="image1" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <br>
+                            <h5>Hey there, fellow traveler! Welcome to China Travel Blog—your go-to spot for all things amazing about traveling in China. If you’re new here, don’t worry. This page is like your trusty map to help you find your way around and get super excited about exploring this incredible country.</h5>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <h5>Why This Blog Exists</h5>
+                            <p>Let’s start with the “why.” I’m a native Chinese currently studying abroad, and I created this blog to share my home country with the world. A quick note on coverage: right now, the blog focuses on Mainland China. That’s simply because Hong Kong, Macao, and Taiwan are already quite well-known to international travelers, while Mainland China has so many hidden gems and lesser-explored spots that I think deserve more attention.</p>
+                            <p>China has endless wonders—vast lands, rich history, warm people, and diverse cultures—but I’ve noticed many overseas friends only know bits of it (like Beijing or Shanghai). My goal? To show you the whole picture of Mainland China first: from the snowy mountains in the west to the tropical beaches in the south, from ancient temples to modern skyscrapers, from spicy Sichuan hot pot to sweet Cantonese dim sum. I hope this blog makes you think, “Wow, Mainland China sounds incredible—I need to visit!” And when you do, I want you to feel confident, curious, and ready to fall in love with every corner of it. Later on, I plan to add content about Hong Kong, Macao, and Taiwan too, so you’ll have a more complete guide to traveling across different parts of China.</p>
+                            <h5>Understanding Mainland China’s 7 Geographic Regions</h5>
+                            <p>Before we dive into specific cities or sights, let’s talk about Mainland China’s 7 geographic regions. Why? Because Mainland China is huge—about the same size as all of Europe! Splitting it into regions makes it easier to wrap your head around its diversity. Each region has its own unique vibe, landscape, culture, and food—and that’s exactly how we organize the “<a href="../blog_categories_page/destinations_page/" class="text-primary">Destinations</a>” section here.</p>
+                            <p>When you click “<a href="../blog_categories_page/destinations_page/categories_destinations.html" class="text-primary">Destinations</a>” in the Categories menu, you’ll see these 7 regions. Here’s a quick intro to each:</p>
+                            <h6>1. Northeastern China</h6>
+                            <p>Think snowy winters, vast forests, and cities with a mix of Chinese and Russian influences. Harbin’s famous Ice Festival? That’s right here.</p>
+                            <h6>2. North China</h6>
+                            <p>Home to Beijing (China’s capital!) and iconic spots like the Great Wall. The land is dry, and the culture is deeply tied to ancient dynasties.</p>
+                            <h6>3. Northwestern China</h6>
+                            <p>Deserts, plateaus, and vibrant minority cultures. Imagine camel rides in the Gobi Desert or exploring Silk Road cities like Dunhuang.</p>
+                            <h6>4. Southwestern China</h6>
+                            <p>Mountains, rivers, and lush nature. This is where you’ll find giant pandas in Sichuan, the stunning Li River in Guilin, and ethnic groups like Tibetans and Yi people.</p>
+                            <h6>5. Central China</h6>
+                            <p>Mainland China’s “heartland,” crisscrossed by the Yangtze River. It blends history (like Xi’an’s Terracotta Army) with modern hubs like Wuhan.</p>
+                            <h6>6. East China</h6>
+                            <p>Warm weather, tropical beaches, and delicious seafood. Think Guangzhou’s Cantonese cuisine, Shenzhen’s skyscrapers, and Hainan Island’s resorts.</p>
+                            <h6>7. South China</h6>
+                            <p>Warm weather, tropical beaches, and delicious seafood. Think Guangzhou’s Cantonese cuisine, Shenzhen’s skyscrapers, and Hainan Island’s resorts.</p>
+                            <p>Grouping destinations this way helps you get a feel for a region’s “flavor” before picking a city—and makes trip planning way simpler!</p>
+                            <h5>Navigating the Whole Website</h5>
+                            <p>Let’s break down each menu tab so you always know where to go:</p>
+                            <h6>1. <a href="../homepage/Homepage.html" class="text-primary">Home</a></h6>
+                            <p>This is the main page. Here, you’ll find the latest blog posts, featured Mainland China destinations, and highlights—like walking into a cozy café where all the best travel stories are shared.</p>
+                            <h6>2. <a href="start_here.html">Start</a></h6>
+                            <p>You’re already here! This is your “welcome and orientation” spot. Bookmark it if you ever need a refresher on how to use the blog, especially as we add more content about Hong Kong, Macao, and Taiwan later.</p>
+                            <h6>3. <a href="../blog_categories_page/blog_categories.html" class="text-primary">Categories</a>(dropdown Menu)</h6>
+                            <p>This is where the good stuff is organized:</p>
+                            <p>• <a href="../blog_categories_page/destinations_page/categories_destinations.html" class="text-primary">Destinations</a>: As we talked about, this currently focuses on Mainland China’s 7 geographic regions. Click a region, then pick a city—each city page dives deep into its heritage, nature, food, and more. (Stay tuned for Hong Kong, Macao, and Taiwan content!)</p>
+                            <p>• <a href="../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html" class="text-primary">Heritage & Monuments</a>: Want to learn about the Great Wall, Forbidden City, or ancient Mainland China temples? This is your go-to.</p>
+                            <p>• <a href="../blog_categories_page/nature_scenery_page/categories_nature_scenery.html" class="text-primary">Nature & Scenery</a>: From Zhangjiajie’s otherworldly mountains to Jiuzhaigou’s colorful lakes—all of Mainland China’s breathtaking natural spots live here.</p>
+                            <p>• <a href="../blog_categories_page/food_page/categories_food.html" class="text-primary">Food</a>: Dumplings, noodles, hot pot, dim sum… Mainland China’s food scene is endless, and this category is your ultimate gastronomic guide.</p>
+                            <h6>4. <a href="../guide_tips_page/guide_tips.html" class="text-primary">Guide & Tips</a>(Dropdown Menu)</h6>
+                            <p>Practical stuff to make your Mainland China trip smooth and stress-free:</p>
+                            <p>• <a href="../guide_tips_page/china_travel_prep/China_Travel_Prep.html" class="text-primary">China Travel Prep</a>: What to pack (think comfortable shoes for walking!), how to stay connected (SIM cards or Wi-Fi), and cultural tips (like using chopsticks or saying “xièxie” for “thank you”).</p>
+                            <p>• <a href="../guide_tips_page/visa_guides/Visa_Guides.html" class="text-primary">Visa Guides</a>: Step-by-step help on getting a Chinese visa, plus updates on China’s current tourist visa policies for international visitors—no confusion, just clear info.</p>
+                            <p>• <a href="../guide_tips_page/itnerary_planning/itinerary_planning.html" class="text-primary">Itinerary Planning</a>: A breakdown of the best times to visit Mainland China throughout the year, plus which regions/cities shine each season (e.g., spring for Guilin’s flowers, winter for Harbin’s ice).</p>
+                            <h6>5. <a href="../about_page/about.html" class="text-primary">About</a>(Dropdown Menu)</h6>
+                            <p>Get to know the blog and me:</p>
+                            <p>• <a href="../about_page/about_me_page/about_me.html" class="text-primary">About Me</a>: I’m a native Chinese student studying abroad—someone who’s grown up loving China’s culture and now wants to share it with you. I’ve traveled across Mainland China, and I’m here to give you authentic, insider tips.</p>
+                            <p>• <a href="../about_page/about_the_blog_page/about_the_blog.html" class="text-primary">About the Blog</a>: How this blog started (focused on Mainland China first, with plans to add Hong Kong, Macao, and Taiwan later), what we stand for (sharing real, useful China travel info), and how to collaborate if you’re interested (e.g., travel partnerships).</p>
+                            <h6>6. <a href="../contact_page/contact.html" class="text-primary">Contact</a></h6>
+                            <p>Want to say hi, ask a question, or suggest a topic (even about Hong Kong, Macao, or Taiwan!)? This page has all the ways to reach me—email, social media, or a contact form. I’d love to hear from you!</p>
+                            <h5>Let’s Start Exploring!</h5>
+                            <p>Now that you know your way around, it’s time to dive in. Head to “<a href="../blog_categories_page/destinations_page/categories_destinations.html" class="text-primary">Destinations</a>” to pick a Mainland China region that calls to you, or check out “<a href="../blog_categories_page/food_page/categories_food.html" class="text-primary">Food</a>” if you’re craving inspiration. If you’re planning a trip soon, “<a href="../guide_tips_page/guide_tips.html" class="text-primary">Guide & Tips</a>” is your best friend.</p>
+                            <p>China is a land of endless discovery—ancient and modern, wild and urban, quiet and lively. As a native, I’m thrilled to help you unlock its wonders, starting with Mainland China, and later sharing more about Hong Kong, Macao, and Taiwan. So go on—click around, stay curious, and let’s start this China travel adventure together. Happy exploring!</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <div class="sticky-top right2">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">RECENT POSTS</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="../blog_categories_page/destinations_page/Northeast_China_page/Changchun/changchun.html" class="text-decoration-none">Changchun Travel Blog: Uncover the Winter Magic and Hidden Gems of Northeast China’s "Automobile City"</a></li>
+                            <li class="list-group-item"><a href="../blog_categories_page/destinations_page/Southwest_China_page/Chengdu/chengdu.html" class="text-decoration-none">Explore Chengdu – Where Spice, History, and Panda Charm Collide</a></li>
+                            <li class="list-group-item"><a href="../blog_categories_page/destinations_page/East_China_page/Shanghai/shanghai.html" class="text-decoration-none">Shanghai Travel Blog: Explore the Magic of China’s Cosmopolitan Gem</a></li>
+                            <li class="list-group-item"><a href="../blog_categories_page/destinations_page/North_China_page/Beijing/beijing.html" class="text-decoration-none">Beijing (North China) - Where Ancient Royalty Meets Modern Vibes</a></li>
+                            <li class="list-group-item"><a href="../blog_categories_page/destinations_page/Central_China_page/Zhengzhou/zhengzhou.html" class="text-decoration-none">Zhengzhou Travel Blog: Uncover 5,000 Years of Civilization & Hidden Natural Charms</a></li>
+                        </ul>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">NAVIGATION</h5>
+                        </div>
+                        <div class="card-body">
+                            <a href="../homepage/Homepage.html" class="badge bg-secondary me-1">Home</a>
+                            <a href="start_here.html" class="badge bg-danger me-1">Start</a>
+                            <a href="../blog_categories_page/blog_categories.html" class="badge bg-secondary me-1">Categories</a>
+                            <a href="../blog_categories_page/destinations_page/categories_destinations.html" class="badge bg-secondary me-1">Destinations</a>
+                            <a href="../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html" class="badge bg-secondary me-1">Heritage & Monuments</a>
+                            <a href="../blog_categories_page/nature_scenery_page/categories_nature_scenery.html" class="badge bg-secondary me-1">Nature & Scenery</a>
+                            <a href="../blog_categories_page/food_page/categories_food.html" class="badge bg-secondary me-1">Food</a>
+                            <a href="../guide_tips_page/guide_tips.html" class="badge bg-secondary me-1">Guide & Tips</a>
+                            <a href="../guide_tips_page/china_travel_prep/China_Travel_Prep.html" class="badge bg-secondary me-1">China Travel Prep</a>
+                            <a href="../guide_tips_page/visa_guides/Visa_Guides.html" class="badge bg-secondary me-1">Visa Guides</a>
+                            <a href="../guide_tips_page/itnerary_planning/itinerary_planning.html" class="badge bg-secondary me-1">Itinerary Planning</a>
+                            <a href="../about_page/about.html" class="badge bg-secondary me-1">About</a>
+                            <a href="../about_page/about_me_page/about_me.html" class="badge bg-secondary me-1">About Me</a>
+                            <a href="../about_page/about_the_blog_page/about_the_blog.html" class="badge bg-secondary me-1">About the Blog</a>
+                            <a href="../contact_page/contact.html" class="badge bg-secondary me-1">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chongqing Top 3 Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .section-box {
+            border-radius: 16px;
+            border: 1px solid #e9ecef;
+            transition: box-shadow 0.3s ease;
+        }
+        .section-box:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+        .scrollspy-content {
+            max-height: 300px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+        }
+        .scrollspy-nav .nav-link.active {
+            color: #0d6efd;
+            font-weight: 500;
+            border-left: 3px solid #0d6efd;
+        }
+        .scrollspy-nav .nav-link {
+            color: #495057;
+            border-left: 3px solid transparent;
+            transition: all 0.2s ease;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../../../../homepage/logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link align-bottom" aria-current="page" href="../../../../../homepage/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../../../start:click_here_page/start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../../../../../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../../../../../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-3">
+        <div class="text-center mb-8">
+            <h1 class="display-5 fw-bold mb-3">Top 3 Food in Chongqing</h1>
+        </div>
+        <div class="section-box p-5 mb-8">
+            <h2 class="h4 fw-bold mb-4">Chongqing Hot Pot (Chóngqìng Huǒguō)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="chongqinghuoguo.jpeg" class="img-fluid rounded-4 shadow-sm w-100" alt="image1">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-1" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy1-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy1-2">Taste</a>
+                                <a class="nav-link mb-2" href="#spy1-3">Preparation Method</a>
+                                <a class="nav-link mb-2" href="#spy1-4">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-1" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy1-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Chongqing Hot Pot is more than a meal—it’s a social ritual. Unlike milder hot pots in other cities, Chongqing’s version uses a “ma la” (numbing-spicy) broth made with Sichuan peppercorns, chili oil, doubanjiang (broad bean paste), and 20+ spices (e.g., star anise, cinnamon). The broth is simmered for hours to develop depth, and it’s served in a divided pot (one side for spicy broth, one for mild “clear broth” if requested). The best ingredients to dip include thinly sliced beef (shuanyangrou), duck intestines (yachang), tofu skin (doufupi), and lotus root (ougen)—locals cook them quickly in the boiling broth and dip in sesame sauce to balance the heat. It’s a must-try for anyone visiting Chongqing, best enjoyed with friends.</p>
+                                </div>
+                                <div id="spy1-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Taste</h5>
+                                    <p class="text-sm text-muted"><strong>Broth:</strong> Fiery spicy with a numbing kick (from Sichuan peppercorns); rich and aromatic, with layers of spice. </p>
+                                    <p class="text-sm text-muted"><strong>Ingredients:</strong> Thin beef is tender and soaks up broth; duck intestines are chewy with a fresh flavor; tofu skin adds creaminess. </p>
+                                    <p class="text-sm text-muted"><strong>Dip:</strong> Sesame sauce cools the heat and adds a nutty sweetness, complementing the spicy broth. </p>
+                                    <p class="text-sm text-muted"><strong>Overall:</strong>Bold, addictive, and communal—every bite is a flavor explosion. </p>
+                                </div>
+                                <div id="spy1-3" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Preparation Method</h5>
+                                    <p class="text-sm text-muted"><strong>1.Make the Spicy Broth: </strong> Heat 5 tbsp vegetable oil in a wok. Add 2 tbsp doubanjiang, 1 tbsp chili powder, 1 star anise, 1 cinnamon stick, and 3 minced garlic cloves; stir-fry for 2 minutes until fragrant. Pour in 1L beef broth and 1 tbsp Sichuan peppercorns; simmer for 1 hour.</p>
+                                    <p class="text-sm text-muted"><strong>2.Prep Ingredients: </strong> Slice 300g beef into thin pieces, clean 200g duck intestines (cut into 10cm sections), and slice 100g lotus root into thin rounds. Arrange ingredients on plates. </p>
+                                    <p class="text-sm text-muted"><strong>3.Set Up the Hot Pot: </strong> Pour the spicy broth into a divided hot pot (add clear broth to the other side if desired). Place the pot on a portable stove and bring to a boil. </p>
+                                    <p class="text-sm text-muted"><strong>4. Serve:</strong> Cook ingredients in the boiling broth (beef: 10 seconds; duck intestines: 30 seconds; lotus root: 2 minutes). Dip in sesame sauce (mix 3 tbsp sesame paste with 1 tbsp soy sauce and 1 tsp sugar) and enjoy. </p>
+                                </div>
+                                <div id="spy1-4">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted"><strong>Local Hot Pot Restaurants:</strong> 80–150 CNY/person (includes broth, 5–6 ingredients, and drinks).</p>
+                                    <p class="text-sm text-muted"><strong>Famous Chains (e.g., “Haidilao”):</strong> 120–200 CNY/person (premium ingredients and table service, e.g., free manicures). </p>
+                                    <p class="text-sm text-muted"><strong>Street Food Hot Pot (Small Portions):</strong> 30–50 CNY/person (for a quick, casual meal).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-box p-5 mb-8">
+            <h2 class="h4 fw-bold mb-4">Spicy Boiled Fish (Là Zhu Yu)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="shuizhuyu.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image2">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-2" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy2-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy2-2">Taste</a>
+                                <a class="nav-link mb-2" href="#spy2-3">Preparation Method</a>
+                                <a class="nav-link mb-2" href="#spy2-4">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy2-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Spicy Boiled Fish is a classic Chongqing dish—tender white fish (usually grass carp or silver carp) boiled in a fiery chili broth, served with bean sprouts and tofu. The key is the broth: it’s made with dried chili peppers, Sichuan peppercorns, and ginger, creating a clear but intensely spicy base. The fish is sliced thinly and marinated in rice wine and cornstarch to keep it tender, then boiled quickly in the broth so it stays juicy. Bean sprouts and tofu add crunch and creaminess, absorbing the broth’s flavor. It’s a popular dinner dish, often served with steamed rice to soak up the spicy broth.</p>
+                                </div>
+                                <div id="spy2-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Taste</h5>
+                                    <p class="text-sm text-muted"><strong>Fish</strong>: Tender, flaky, and mild—no fishy taste; the broth infuses it with spice.  </p>
+                                    <p class="text-sm text-muted"><strong>Broth:</strong> Clear but fiery, with a numbing hint; not greasy, so you can sip it (if you can handle the heat).  </p>
+                                    <p class="text-sm text-muted"><strong>Toppings:</strong> Bean sprouts are crunchy and tangy; tofu is soft and creamy, balancing the fish. </p>
+                                    <p class="text-sm text-muted"><strong>Overall:</strong>Spicy but refreshing—lighter than hot pot, but still full of Chongqing flavor. </p>
+                                </div>
+                                <div id="spy2-3" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Preparation Method</h5>
+                                    <p class="text-sm text-muted"><strong>1. Prep the Fish:</strong> Clean 1kg grass carp; slice the flesh into thin pieces (keep bones for broth). Marinate fish in 1 tbsp rice wine, 1 tsp cornstarch, and a pinch of salt for 20 minutes. </p>
+                                    <p class="text-sm text-muted"><strong>2. Make the Broth</strong>: Heat 3 tbsp vegetable oil in a pot. Add 10 dried chili peppers, 1 tbsp Sichuan peppercorns, 3 sliced ginger pieces, and 2 minced garlic cloves; stir-fry for 1 minute. Pour in 1.5L water and add the fish bones; simmer for 30 minutes. Strain out bones and return broth to the pot.  </p>
+                                    <p class="text-sm text-muted"><strong>3. Cook the Toppings & Fish:</strong> Add 100g bean sprouts and 150g cubed tofu to the broth; simmer for 5 minutes until tender. Gently add the marinated fish slices (don’t stir too hard to avoid breaking) and cook for 3–4 minutes until the fish turns white and opaque.</p>
+                                    <p class="text-sm text-muted"><strong>4. Finish & Serve:</strong>4.  Turn off the heat. Sprinkle 2 tbsp fresh chili flakes and 1 tbsp Sichuan peppercorns over the top. Heat 2 tbsp vegetable oil until smoking, then pour it over the chili flakes (this releases a fragrant, spicy aroma). Serve hot with steamed rice. </p>
+                                </div>
+                                <div id="spy2-4">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted"><strong>Local Restaurants:</strong> 68–98 CNY/serving (uses 500–700g fish, enough for 2–3 people).</p>
+                                    <p class="text-sm text-muted"><strong>Seafood Restaurants:</strong> 108–158 CNY/serving (uses premium fish like grouper or bass, less fishy and more tender). </p>
+                                    <p class="text-sm text-muted"><strong>Home-Style Eateries:</strong> 58–78 CNY/serving (generous portion with extra bean sprouts and tofu).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-box p-5">
+            <h2 class="h4 fw-bold mb-4">Stinky Tofu (Chòu Dòufu)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="choudoufu.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image3">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-3" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy3-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy3-2">Taste</a>
+                                <a class="nav-link mb-2" href="#spy3-3">Preparation Method</a>
+                                <a class="nav-link mb-2" href="#spy3-4">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-3" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy3-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Stinky Tofu is a beloved Chongqing street food—fermented tofu fried until crispy on the outside and soft on the inside, served with a spicy chili dip. Despite its strong, pungent aroma (from the fermentation process), it’s a favorite among locals for its bold flavor. Chongqing’s version is “dry-fried” (no batter), so the outer layer is crunchy while the inside stays silky. The fermentation uses a mix of soybeans, salt, and spices, giving the tofu a savory, umami taste that pairs perfectly with the spicy dip (made with chili oil, garlic, and vinegar). You’ll find it at night markets, street stalls near Liberation Monument, and even in small alleyways—look for the telltale aroma and the sound of frying tofu.</p>
+                                </div>
+                                <div id="spy3-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Taste</h5>
+                                    <p class="text-sm text-muted"><strong></strong>Texture: Crispy, golden outer layer; soft, creamy inner layer—perfect contrast.  </p>
+                                    <p class="text-sm text-muted"><strong></strong>Flavor: Savory, umami-rich (from fermentation); the spicy dip adds heat and tang, cutting through any “stink” and balancing the taste.  </p>
+                                    <p class="text-sm text-muted"><strong>Overall:</strong>Addictive—once you get past the aroma, it’s hard to stop eating. </p>
+                                </div>
+                                <div id="spy3-3" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Preparation Method</h5>
+                                    <p class="text-sm text-muted"><strong>1. Ferment the Tofu:</strong> Cut 500g firm tofu into 5cm cubes. Soak in a fermented brine (mix 1L water, 3 tbsp salt, 1 tbsp Sichuan peppercorns, and 2 tbsp soy sauce; boil and cool) for 3–5 days (longer for stronger flavor). Remove and pat dry. </p>
+                                    <p class="text-sm text-muted"><strong>2. Fry the Tofu:</strong> Heat 500ml vegetable oil in a pan to 180°C. Add the fermented tofu cubes (fry in batches) and cook for 4–5 minutes until golden and crispy on the outside. Transfer to a plate lined with paper towels to drain. </p>
+                                    <p class="text-sm text-muted"><strong>3. Make the Spicy Dip:</strong> Mix 2 tbsp chili oil, 1 tsp minced garlic, 1 tsp rice vinegar, ½ tsp sugar, and a pinch of salt in a small bowl. </p>
+                                    <p class="text-sm text-muted"><strong>4. Serve:</strong>Place the fried tofu on a plate, drizzle with the spicy dip, and sprinkle with chopped green onions. Serve hot (best eaten immediately for crunch).</p>
+                                </div>
+                                <div id="spy3-4">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted"><strong>Street Stalls/Night Markets:</strong> 8–12 CNY/5 pieces (the most common serving size). </p>
+                                    <p class="text-sm text-muted"><strong>Snack Shops:</strong> 15–20 CNY/8 pieces (larger cubes, often served with extra dip). </p>
+                                    <p class="text-sm text-muted"><strong>Tourist Areas (Liberation Monument):</strong> 12–15 CNY/5 pieces (slightly higher price, but convenient for visitors). </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>

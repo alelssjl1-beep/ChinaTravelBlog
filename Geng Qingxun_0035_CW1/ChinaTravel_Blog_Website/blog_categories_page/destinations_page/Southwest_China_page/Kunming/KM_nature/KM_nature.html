@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunming Top 3 Nature Spots</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .section-box {
+            border-radius: 16px;
+            border: 1px solid #e9ecef;
+            transition: box-shadow 0.3s ease;
+        }
+        .section-box:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+        .scrollspy-content {
+            max-height: 300px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+        }
+        .scrollspy-nav .nav-link.active {
+            color: #0d6efd;
+            font-weight: 500;
+            border-left: 3px solid #0d6efd;
+        }
+        .scrollspy-nav .nav-link {
+            color: #495057;
+            border-left: 3px solid transparent;
+            transition: all 0.2s ease;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../../../../homepage/logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link align-bottom" aria-current="page" href="../../../../../homepage/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../../../start:click_here_page/start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../../../../../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../../../../../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-3">
+        <div class="text-center mb-8">
+            <h1 class="display-5 fw-bold mb-3">Top 3 Nature Spots in Kunming</h1>
+        </div>
+        <div class="section-box p-5 mb-8">
+            <h2 class="h4 fw-bold mb-4">Dianchi Lake (Lake Dian)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="dianchi.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image1">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-1" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy1-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy1-2">Best Time to Visit</a>
+                                <a class="nav-link mb-2" href="#spy1-3">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-1" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy1-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Dianchi Lake, 15 kilometers southwest of downtown Kunming, is Yunnan’s largest freshwater lake (330 square kilometers)—often called “the Pearl of the Plateau.” Surrounded by green hills and wetlands, it’s a haven for nature lovers. The highlight is the Haigeng Dam area (eastern shore), where thousands of red-billed seagulls migrate from Siberia every winter (November–February)—you can feed them breadcrumbs and take photos as they fly around. Other popular spots include Dianchi Wetland Park (with boardwalks through reeds and lotus ponds) and Xishan Scenic Area (western shore, offering lake views from mountain peaks). You can cycle along the lake’s eastern coast (bike rental: 30 CNY/hour) or take a boat tour (1-hour) to enjoy the calm water and mountain backdrops.</p>
+                                </div>
+                                <div id="spy1-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Best Time to Visit</h5>
+                                    <p class="text-sm text-muted"><strong>Winter (November–February):</strong>  Seagull migration; mild weather (10°C–18°C) with clear skies.</p>
+                                    <p class="text-sm text-muted"><strong>Morning (9:00 AM–11:00 AM):</strong>  Seagulls are most active; soft light for lake photos.</p>
+                                </div>
+                                <div id="spy1-3">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted"><strong>Entry Fee:</strong> Free (most lake areas, including Haigeng Dam); Dianchi Wetland Park: 20 CNY/adult.</p>
+                                    <p class="text-sm text-muted"><strong>Boat Tour (1-hour): </strong> 80 CNY/adult; 40 CNY/children (1.2m–1.4m).</p>
+                                    <p class="text-sm text-muted"><strong>Bike Rental:</strong> 30 CNY/hour; 80 CNY/day (includes a lock and map).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-box p-5 mb-8">
+            <h2 class="h4 fw-bold mb-4">Stone Forest (Shilin Scenic Area)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="shilin.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image2">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-2" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy2-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy2-2">Best Time to Visit</a>
+                                <a class="nav-link mb-2" href="#spy2-3">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy2-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Stone Forest, 85 kilometers southeast of Kunming, is a UNESCO World Heritage Site and one of Yunnan’s most iconic natural attractions. Covering 350 square kilometers, it’s a surreal landscape of limestone pillars (up to 40 meters tall) shaped by millions of years of erosion—resembling a forest of stone trees. The main area, Greater Stone Forest, has well-paved trails winding through the pillars, with scenic spots like “Ashima Stone” (a tall pillar named after a Yi ethnic minority legend) and “Sword Peak Pond” (a small lake reflecting the pillars). Lesser Stone Forest (closer to the entrance) is quieter, with fewer crowds and gentle paths suitable for families. You can take a shuttle bus (25 CNY/adult) between the two areas or hire a local guide to learn about the Yi people’s stories tied to the landscape.</p>
+                                </div>
+                                <div id="spy2-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Best Time to Visit</h5>
+                                    <p class="text-sm text-muted"><strong>Spring (March–May):</strong> Cool (15°C–22°C), with wildflowers blooming around the pillars.</p>
+                                    <p class="text-sm text-muted"><strong>Afternoon (2:00 PM–4:00 PM):</strong> Golden light reduces harsh shadows on the stone pillars, making photos more vivid.</p>
+                                </div>
+                                <div id="spy2-3">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted"><strong>Entry Fee:</strong> 130 CNY/adult; 65 CNY/students (with ID); free for kids under 1.2m.</p>
+                                    <p class="text-sm text-muted"><strong>Internal Shuttle Bus:</strong> 25 CNY/adult (unlimited rides between Greater and Lesser Stone Forest).</p>
+                                    <p class="text-sm text-muted"><strong>Yi Ethnic Performance:</strong> 50 CNY/adult (30-minute show with singing and dancing, near the entrance).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-box p-5">
+            <h2 class="h4 fw-bold mb-4">Western Hills (Xishan Scenic Area)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="xishan.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image3">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-3" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy3-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy3-2">Best Time to Visit</a>
+                                <a class="nav-link mb-2" href="#spy3-3">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-3" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy3-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Western Hills, 15 kilometers west of Kunming, are a range of green mountains overlooking Dianchi Lake—known for their pine forests, cliffside pavilions, and panoramic views. The main trail leads to Longmen Grottoes (a series of stone caves and carvings built in the Qing Dynasty), where you can walk along narrow cliff paths and look down at Dianchi Lake below. Other highlights include Huating Temple (a 1,000-year-old Buddhist temple with ancient cypresses) and Taihua Mountain (the highest peak, 2,501 meters, with views of Kunming’s skyline). You can hike the entire trail (3–4 hours) or take a cable car (50 CNY/one-way) from the foot of the mountain to Longmen Grottoes—saving energy for exploring the caves. In spring, azaleas bloom along the trails, adding color to the green mountains.</p>
+                                </div>
+                                <div id="spy3-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Best Time to Visit</h5>
+                                    <p class="text-sm text-muted"><strong>Spring (March–April):</strong> Azalea blooming season; mild temperatures (15°C–20°C).</p>
+                                    <p class="text-sm text-muted"><strong>Sunset (5:30 PM–6:30 PM):</strong> Views of Dianchi Lake and Kunming’s skyline at sunset are breathtaking.</p>
+                                </div>
+                                <div id="spy3-3">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted"><strong>Entry Fee:</strong> 40 CNY/adult; 20 CNY/students; free for kids under 1.2m.</p>
+                                    <p class="text-sm text-muted"><strong>Cable Car (One-way):</strong> 50 CNY/adult; 25 CNY/children (1.2m–1.4m).</p>
+                                    <p class="text-sm text-muted"><strong>Longmen Grottoes Extra Fee:</strong> 25 CNY/adult (includes access to the cliffside caves and pavilions).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>

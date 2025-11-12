@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chengdu Top 3 Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .section-box {
+            border-radius: 16px;
+            border: 1px solid #e9ecef;
+            transition: box-shadow 0.3s ease;
+        }
+        .section-box:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+        .scrollspy-content {
+            max-height: 300px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+        }
+        .scrollspy-nav .nav-link.active {
+            color: #0d6efd;
+            font-weight: 500;
+            border-left: 3px solid #0d6efd;
+        }
+        .scrollspy-nav .nav-link {
+            color: #495057;
+            border-left: 3px solid transparent;
+            transition: all 0.2s ease;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../../../../homepage/logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link align-bottom" aria-current="page" href="../../../../../homepage/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../../../start:click_here_page/start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../../../../../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../../../../../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-3">
+        <div class="text-center mb-8">
+            <h1 class="display-5 fw-bold mb-3">Top 3 Food in Chengdu</h1>
+        </div>
+        <div class="section-box p-5 mb-8">
+            <h2 class="h4 fw-bold mb-4">Mapo Tofu (Mápó Dòufu)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="mapo.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image1">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-1" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy1-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy1-2">Taste</a>
+                                <a class="nav-link mb-2" href="#spy1-3">Preparation Method</a>
+                                <a class="nav-link mb-2" href="#spy1-4">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-1" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy1-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Mapo Tofu is Sichuan’s most famous dish—silky soft tofu in a spicy, numbing sauce made with “doubanjiang” (broad bean paste), chili oil, and “tianmianjiang” (fermented soybean paste). It was invented in the late 19th century by “A-Po” (Granny Chen), a Chengdu cook, and gets its name from “ma” (numbing, from Sichuan peppercorns) and “po” (granny). The perfect Mapo Tofu has a balance of spicy, numbing, salty, and slightly sweet flavors, with tender tofu that doesn’t break apart and a sauce that clings to every cube. It’s usually served with steamed rice—so you can soak up every drop of sauce.</p>
+                                </div>
+                                <div id="spy1-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Taste</h5>
+                                    <p class="text-sm text-muted"><strong>Tofu:</strong> Silky, soft, and absorbent—soaks up the sauce’s flavors. </p>
+                                    <p class="text-sm text-muted"><strong>Sauce:</strong> Spicy (from chili oil), numbing (from Sichuan peppercorns), salty (from bean paste), with a hint of sweetness. </p>
+                                    <p class="text-sm text-muted"><strong>Texture:</strong> Contrasts between soft tofu and small bits of ground pork (optional) or green onions. </p>
+                                    <p class="text-sm text-muted"><strong>Overall:</strong>Bold and addictive—classic Sichuan “ma la” flavor. </p>
+                                </div>
+                                <div id="spy1-3" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Preparation Method</h5>
+                                    <p class="text-sm text-muted"><strong>1. Prep Ingredients:</strong> Cut 500g soft tofu into 2cm cubes; soak in warm water with 1 tsp salt for 10 minutes (to firm up). Mince 100g ground pork (or beef), chop 2 green onions, and grind 1 tbsp Sichuan peppercorns.</p>
+                                    <p class="text-sm text-muted"><strong>2. Make the Sauce:</strong> Heat 2 tbsp vegetable oil in a wok over medium heat. Add the ground pork and stir-fry until browned (3 minutes). Add 1 tbsp doubanjiang and 1 tsp tianmianjiang; stir-fry for 1 minute until fragrant. Pour in 150ml water or chicken broth. </p>
+                                    <p class="text-sm text-muted"><strong>3. Cook the Tofu:</strong> Add the tofu cubes to the wok; gently stir to coat with sauce. Simmer for 5 minutes (don’t stir too hard—tofu will break). Mix 1 tsp cornstarch with 2 tbsp water; pour into the wok to thicken the sauce. </p>
+                                    <p class="text-sm text-muted"><strong>4. Finish & Serve:</strong> Turn off the heat. Add the ground Sichuan peppercorns and chopped green onions. Drizzle with 1 tbsp chili oil. Serve hot with steamed rice. </p>
+                                </div>
+                                <div id="spy1-4">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted"><strong>Local Restaurants:</strong>  28–48 CNY/serving (with or without ground pork).</p>
+                                    <p class="text-sm text-muted"><strong>Famous Sichuan Restaurants (e.g., “Lai Weixian”):</strong> 58–78 CNY/serving (uses premium tofu and homemade bean paste). </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-box p-5 mb-8">
+            <h2 class="h4 fw-bold mb-4">Kung Pao Chicken (Gōngbǎo Jīdàn)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="kungpao.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image2">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-2" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy2-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy2-2">Taste</a>
+                                <a class="nav-link mb-2" href="#spy2-3">Preparation Method</a>
+                                <a class="nav-link mb-2" href="#spy2-4">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy2-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Kung Pao Chicken is a global favorite, but the authentic version from Chengdu is a far cry from Western adaptations. It’s made with tender diced chicken, crispy roasted peanuts, dried chili peppers, and leeks—stir-fried in a sweet-savory sauce with soy sauce and rice wine. The key is balance: the chicken is tender (not overcooked), the peanuts are crispy (not soggy), and the sauce is spicy-sweet (not too sticky). It was named after Ding Baozhen (1820–1886), a Qing Dynasty official with the title “Gongbao” (Palace Guardian), who loved this dish. In Chengdu, it’s served as a main course or a “xiaochi” (snack) with beer.</p>
+                                </div>
+                                <div id="spy2-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Taste</h5>
+                                    <p class="text-sm text-muted"><strong>Chicken:</strong> Tender, juicy, and seasoned with soy sauce—no dry, tough bits.  </p>
+                                    <p class="text-sm text-muted"><strong>Peanuts:</strong> Crispy, salty, and add a crunch that contrasts with the soft chicken.  </p>
+                                    <p class="text-sm text-muted"><strong>Sauce:</strong> Sweet-savory with a mild spicy kick from dried chilies; not too thick. </p>
+                                    <p class="text-sm text-muted"><strong>Overall:</strong>Balanced and flavorful—great for those who want Sichuan flavor without extreme heat. </p>
+                                </div>
+                                <div id="spy2-3" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Preparation Method</h5>
+                                    <p class="text-sm text-muted"><strong>1. Prep Ingredients:</strong> Dice 300g boneless chicken breast into 1cm cubes. Marinate in 1 tbsp light soy sauce, 1 tsp rice wine, and 1 tsp cornstarch for 15 minutes. Roast 50g peanuts (unsalted) until crispy; set aside. Slice 2 leeks into 1cm pieces; prepare 5 dried chili peppers. </p>
+                                    <p class="text-sm text-muted"><strong>2. Stir-Fry the Chicken:</strong> Heat 2 tbsp vegetable oil in a wok over high heat. Add the marinated chicken and stir-fry until just cooked (2–3 minutes); remove from the wok.  </p>
+                                    <p class="text-sm text-muted"><strong>3. Cook Aromatics & Sauce:</strong> In the same wok, add 1 tbsp oil. Add the dried chili peppers and 1 tsp Sichuan peppercorns; stir-fry for 30 seconds until fragrant (don’t burn the chilies). Add the leek slices and stir-fry for 1 minute until soft. </p>
+                                    <p class="text-sm text-muted"><strong>4. Combine & Finish:</strong> Return the chicken to the wok. Mix 1 tbsp light soy sauce, 1 tsp sugar, 1 tsp rice vinegar, and ½ tsp cornstarch in a small bowl to make the sauce. Pour the sauce over the chicken and vegetables, stir-fry for 1 minute until the sauce thickens. Add the roasted peanuts and toss gently to coat. </p>
+                                    <p class="text-sm text-muted"><strong>5. Serve:</strong> Transfer to a plate and serve hot—best with steamed rice or as a side with beer.</p>
+                                </div>
+                                <div id="spy2-4">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted"><strong>Local Eateries:</strong> 38–58 CNY/serving (generous portion with plenty of chicken and peanuts).</p>
+                                    <p class="text-sm text-muted"><strong>High-end Sichuan Restaurants:</strong> 68–88 CNY/serving (uses free-range chicken and premium peanuts). </p>
+                                    <p class="text-sm text-muted"><strong>Street Food Stalls (Kuanzhai Alleys):</strong> 25–35 CNY/small portion (great for a quick snack).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-box p-5">
+            <h2 class="h4 fw-bold mb-4">Dan Dan Noodles (Dàn Dàn Miàn)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="dandan.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image3">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-3" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy3-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy3-2">Taste</a>
+                                <a class="nav-link mb-2" href="#spy3-3">Preparation Method</a>
+                                <a class="nav-link mb-2" href="#spy3-4">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-3" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy3-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Dan Dan Noodles are a classic Chengdu street food—thin, chewy wheat noodles tossed in a spicy, savory sauce, topped with minced pork, preserved vegetables, and green onions. The name comes from “dan dan” (meaning “carry pole”)—historically, vendors carried the noodles and sauce in two baskets on a pole, selling them door-to-door. Chengdu’s version is “dry” (no broth) or “soup-based,” but the dry style is more iconic: the sauce is made with chili oil, Sichuan peppercorns, soy sauce, and sesame paste, creating a rich, numbing-spicy flavor that clings to every noodle. It’s a hearty, affordable snack—locals eat it for breakfast, lunch, or a late-night bite.</p>
+                                </div>
+                                <div id="spy3-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Taste</h5>
+                                    <p class="text-sm text-muted"><strong>Noodles:</strong> Thin, chewy, and slightly elastic—perfect for holding the thick sauce.  </p>
+                                    <p class="text-sm text-muted"><strong>Sauce:</strong> Spicy (from chili oil), numbing (from Sichuan peppercorns), salty-savory (from soy sauce), with a creamy hint from sesame paste.  </p>
+                                    <p class="text-sm text-muted"><strong>Toppings:</strong> Minced pork adds savoriness, preserved vegetables add tangy crunch, and green onions add freshness. </p>
+                                    <p class="yext-am text-muted"><strong>Overall:</strong> Bold and satisfying—packs a flavor punch in every bite.</p>
+                                </div>
+                                <div id="spy3-3" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Preparation Method</h5>
+                                    <p class="text-sm text-muted"><strong>1. Prep the Sauce:</strong> In a large bowl, mix 2 tbsp chili oil, 1 tbsp light soy sauce, 1 tbsp dark soy sauce, 1 tbsp sesame paste, 1 tsp Sichuan peppercorn powder, ½ tsp sugar, and 1 tbsp rice vinegar. Stir until smooth. </p>
+                                    <p class="text-sm text-muted"><strong>2. Cook the Toppings:</strong> Heat 1 tbsp vegetable oil in a pan over medium heat. Add 100g minced pork and stir-fry until browned (3 minutes). Add 1 tbsp preserved vegetables (diced) and stir-fry for 1 minute; set aside. </p>
+                                    <p class="text-sm text-muted"><strong>3. Cook the Noodles:</strong> Bring a pot of water to a boil. Add 200g dry wheat noodles and cook for 4–5 minutes (follow package instructions). Drain the noodles and add them to the sauce bowl. </p>
+                                    <p class="text-sm text-muted"><strong>4. Assemble:</strong> Top the noodles with the minced pork mixture, chopped green onions, and a sprinkle of sesame seeds (optional). Toss well to coat the noodles in the sauce. Serve hot.</p>
+                                </div>
+                                <div id="spy3-4">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted"><strong>Street Stalls:</strong> 8–12 CNY/bowl (basic dry version with all toppings). </p>
+                                    <p class="text-sm text-muted"><strong>Local Noodle Shops:</strong> 15–20 CNY/bowl (larger portion, with extra pork or a side of pickled vegetables). </p>
+                                    <p class="text-sm text-muted"><strong>Kuanzhai Alleys/Jinli Street:</strong> 18–25 CNY/bowl (tourist-friendly portions, often served in traditional bowls). </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>

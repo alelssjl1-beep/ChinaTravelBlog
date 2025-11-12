@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChinaTravel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .link1{
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .h5{
+            color: aliceblue;
+        }
+        .link2{
+            color: black;
+            text-decoration: none;
+        }
+        .heading2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .heading22{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+            margin-top: 10px;
+        }
+        .card{
+           box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active align-bottom" aria-current="page" href="Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../start:click_here_page/start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../blog_categories_page/destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="../blog_categories_page/nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="../blog_categories_page/food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="China-page-banner-explore-china.jpg" class="d-block w-100" alt="pohto">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">Welcome to My Blog!</h5>
+                    <p><a class="link1" href="../start:click_here_page/start_here.html">Click Here First – It’ll Help You Navigate This Blog & China Travel!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+   <section class="py-8 bg-light">
+    <div class="container py-3">
+        <h2 class="fw-bold mb-6 text-center text-uppercase heading2">Latest Blogs</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-12 mb-6 mb-lg-0">
+                <img src="latest_blogs.webp" alt="image_lastest_blogs" class="img-fluid rounded shadow" loading="lazy">
+            </div>
+            <div class="col-lg-8 col-12">
+                <div class="list-group gap-3">
+                    <a href="../blog_categories_page/destinations_page/Northeast_China_page/Changchun/changchun.html" class="list-group-item list-group-item-action py-3 shadow-sm hover:shadow">1.Changchun Travel Blog: Uncover the Winter Magic and Hidden Gems of Northeast China’s "Automobile City"</a>
+                    <a href="../blog_categories_page/destinations_page/Southwest_China_page/Chengdu/chengdu.html" class="list-group-item list-group-item-action py-3 shadow-sm hover:shadow">2.Explore Chengdu – Where Spice, History, and Panda Charm Collide</a>
+                    <a href="../blog_categories_page/destinations_page/East_China_page/Shanghai/shanghai.html" class="list-group-item list-group-item-action py-3 shadow-sm hover:shadow">3.Shanghai Travel Blog: Explore the Magic of China’s Cosmopolitan Gem</a>
+                    <a href="../blog_categories_page/destinations_page/North_China_page/Beijing/beijing.html" class="list-group-item list-group-item-action py-3 shadow-sm hover:shadow">4.Beijing (North China) - Where Ancient Royalty Meets Modern Vibes</a>
+                    <a href="../blog_categories_page/destinations_page/Central_China_page/Zhengzhou/zhengzhou.html" class="list-group-item list-group-item-action py-3 shadow-sm hover:shadow">5.Zhengzhou Travel Blog: Uncover 5,000 Years of Civilization & Hidden Natural Charms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <h2 class="fw-bold mb-6 text-center text-uppercase heading22">Navigate Your China Adventure With These Sections</h2>
+    <div class="card-group">
+        <div class="card">
+            <a href="../start:click_here_page/start_here.html" class="link2 card-body">
+                <img src="start_here.jpg" class="card-img-top" alt="start_here">
+                <div class="card-body">
+                    <h5 class="card-title">START HERE</h5>
+                    <p class="card-text"> A guide to navigate this blog & China travel, including why I built it, China’s regional breakdown, and 7-region selection reasons.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="../guide_tips_page/guide_tips.html" class="link2 card-body">
+                <img src="chinese-travel-tips.webp" class="card-img-top" alt="GUIDE & TIPS">
+                <div class="card-body">
+                    <h5 class="card-title">GUIDE & TIPS</h5>
+                    <p class="card-text"> Covers China travel prep, visa guides, and itinerary planning to help you prepare for your journey.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="../blog_categories_page/blog_categories.html" class="link2 card-body">
+                <img src="my_blog.jpg" class="card-img-top" alt="blog">
+                <div class="card-body">
+                    <h5 class="card-title">MY BLOG Categories</h5>
+                    <p class="card-text">Shows different blog groups about China. There are destinations, historical spots, natural views and nice food, helping you discover more about China's travel.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="../about_page/about_me_page/about_me.html" class="link2 card-body">
+                <img src="about_me.jpg" class="card-img-top" alt="about_me">
+                <div class="card-body">
+                    <h5 class="card-title">ABOUT ME</h5>
+                    <p class="card-text">Shares in detail why I started this blog, my rich travel experiences across China, and exciting future travel plans.</p>
+                </div>
+            </a>
+        </div>
+         <div class="card">
+            <a href="../contact_page/contact.html" class="link2 card-body">
+                <img src="contact_me.jpg" class="card-img-top" alt="contact_me">
+                <div class="card-body">
+                    <h5 class="card-title">CONTACT ME</h5>
+                    <p class="card-text">Provides multiple ways to get in touch with me for questions, collaborations, or sharing your China travel stories.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>

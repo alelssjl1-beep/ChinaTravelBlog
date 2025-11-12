@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanzhou Top 3 Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: rgb(62, 52, 52);
+        }
+        .nav-item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+        }
+        .btn{
+            font-size: 23px;
+            color: rgb(91, 84, 84);
+            border-color: rgb(91, 84, 84);
+        }
+        .btn:hover{
+            background-color: rgb(91, 84, 84);
+            border-color: aqua;
+        }
+        .p1{
+            background-color: #f9f9f9;
+            color: rgb(91, 84, 84);
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        body{
+            margin: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .section-box {
+            border-radius: 16px;
+            border: 1px solid #e9ecef;
+            transition: box-shadow 0.3s ease;
+        }
+        .section-box:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+        .scrollspy-content {
+            max-height: 300px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+        }
+        .scrollspy-nav .nav-link.active {
+            color: #0d6efd;
+            font-weight: 500;
+            border-left: 3px solid #0d6efd;
+        }
+        .scrollspy-nav .nav-link {
+            color: #495057;
+            border-left: 3px solid transparent;
+            transition: all 0.2s ease;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu{
+            transition: all 0.3s ease;
+        }
+        .navbar-collapse{
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../../../../homepage/logo.jpg" alt="Logo" width="150" height="60" class="d-inline-block align-bottom">
+                 ChinaTravel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link align-bottom" aria-current="page" href="../../../../../homepage/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../../../start:click_here_page/start_here.html">Start</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/destinations_page/categories_destinations.html">Destinations</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/heritage_monuments_page/categories_heritage_mounments.html">Heritage & Monuments</a></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/nature_scenery_page/categories_nature_scenery.html">Nature & Scenery</a></li>
+                            <li><a class="dropdown-item" href="../../../../../blog_categories_page/food_page/categories_food.html">Food</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guide & Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/china_travel_prep/China_Travel_Prep.html">China Travel Prep</a></li>
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/visa_guides/Visa_Guides.html">Visa Guides</a></li>
+                            <li><a class="dropdown-item" href="../../../../../guide_tips_page/itnerary_planning/itinerary_planning.html">Itinerary Planning</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../../about_page/about_me_page/about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="../../../../../about_page/about_the_blog_page/about_the_blog.html">About the Blog</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../../../../../contact_page/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-3">
+        <div class="text-center mb-8">
+            <h1 class="display-5 fw-bold mb-3">Top 3 Food in Lanzhou</h1>
+        </div>
+        <div class="section-box p-5 mb-8">
+            <h2 class="h4 fw-bold mb-4">Lanzhou Lamian (Hand-Pulled Noodles)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="lamian.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image1">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-1" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy1-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy1-2">Taste</a>
+                                <a class="nav-link mb-2" href="#spy1-4">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-1" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy1-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Lanzhou Lamian is Lanzhou’s most famous dish—hand-pulled wheat noodles served in a clear, savory broth with sliced beef, green onions, and cilantro. The magic is in the noodles: skilled chefs pull the dough into thin, uniform strands (sometimes up to 8 times, creating hundreds of noodles) right in front of you. The broth is made by simmering beef bones and meat with star anise, ginger, and Sichuan peppercorns for hours—clear but rich with flavor. It’s usually served “plain” (just noodles and broth) or with extra toppings like pickled mustard greens or chili oil. In Lanzhou, eating Lamian is a daily ritual—locals often have it for breakfast or lunch, and stalls are open from early morning to late night.</p>
+                                </div>
+                                <div id="spy1-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Taste</h5>
+                                    <p class="text-sm text-muted">Noodles: Chewy, springy, and tender—each strand is evenly coated with broth. </p>
+                                    <p class="text-sm text-muted"> Broth: Clear, savory, and light—no greasiness, just pure beef flavor with a hint of spices.</p>
+                                    <p class="text-sm text-muted">Beef: Thinly sliced, tender, and lean—cooked just enough to stay juicy.</p>
+                                    <p class="text-sm text-muted">Overall: Simple, comforting, and satisfying—perfect for any meal.</p>
+                                </div>
+                                <div id="spy1-4">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted">Local Stalls: 8–12 CNY/bowl (standard size, with beef).</p>
+                                    <p class="text-sm text-muted"> Famous Lamian Shops: 15–20 CNY/bowl (larger portion, with extra beef or toppings).</p>
+                                    <p class="text-sm text-muted">Airport/Railway Station Shops: 20–30 CNY/bowl (higher price, but still authentic).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-box p-5 mb-8">
+            <h2 class="h4 fw-bold mb-4">Roasted Lamb Skewers (Kao Yangrou Chuan)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="yangrouchuan.png" class="img-fluid rounded-4 shadow-sm w-100" alt="image2">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-2" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy2-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy2-2">Taste</a>
+                                <a class="nav-link mb-2" href="#spy2-4">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy2-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Roasted Lamb Skewers are a beloved Lanzhou street food—small pieces of lamb (usually from the leg or shoulder) skewered on bamboo sticks, grilled over charcoal, and seasoned with cumin, chili powder, and salt. Lanzhou’s lamb is known for being tender and non-gamey (thanks to the region’s pastures), making it perfect for grilling. The skewers are cooked quickly (2–3 minutes per side) to keep the lamb juicy, with a slightly charred exterior that adds smoky flavor. You’ll find vendors selling them on almost every street corner, especially in the evening—locals often pair them with cold beer or soda. They’re a must-try for anyone who loves savory, spicy street food.</p>
+                                </div>
+                                <div id="spy2-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Taste</h5>
+                                    <p class="text-sm text-muted">Lamb: Tender, juicy, and mild—no gamey aftertaste; the charcoal grill adds a smoky aroma.</p>
+                                    <p class="text-sm text-muted">Seasoning: Cumin adds earthy flavor, chili powder adds a mild kick, and salt enhances the lamb’s natural taste.</p>
+                                    <p class="text-sm text-muted">Texture: Slightly charred on the outside, tender on the inside—perfect contrast. </p>
+                                    <p class="text-sm text-muted">Overall: Addictive, portable, and full of flavor—ideal for a late-night snack. </p>
+                                </div>
+                                <div id="spy2-4">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted">Street Stalls: 2–3 CNY/skewer (10–15 skewers make a full meal for one person).</p>
+                                    <p class="text-sm text-muted"> Night Markets: 3–4 CNY/skewer (often sold in batches of 5 or 10, with discounts).</p>
+                                    <p class="text-sm text-muted"> Local Restaurants: 4–6 CNY/skewer (larger portions of lamb, served with side dishes like grilled vegetables).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-box p-5">
+            <h2 class="h4 fw-bold mb-4">Sweet Fermented Rice Soup (Tangyuan Niangao Tang / Tian Niang Pi)</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <img src="niangpi.jpg" class="img-fluid rounded-4 shadow-sm w-100" alt="image3">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <nav id="scrollspy-nav-3" class="scrollspy-nav nav flex-column h-100">
+                                <a class="nav-link mb-2" href="#spy3-1">Introduction</a>
+                                <a class="nav-link mb-2" href="#spy3-2">Taste</a>
+                                <a class="nav-link mb-2" href="#spy3-4">Price</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-8 col-md-12" data-bs-spy="scroll" data-bs-target="#scrollspy-nav-3" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+                            <div class="scrollspy-content p-3 bg-light rounded-3">
+                                <div id="spy3-1" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Introduction</h5>
+                                    <p class="text-sm text-muted">Sweet Fermented Rice Soup is a warm, comforting Lanzhou dessert—made with fermented glutinous rice (called “niangao”), water or broth, and topped with raisins, goji berries, or small rice dumplings (“tangyuan”). The fermentation process gives the rice a slightly sweet, mild alcoholic flavor (with very low alcohol content, safe for all ages) and a soft, chewy texture. It’s typically simmered gently to create a thick, creamy soup that’s perfect for cool evenings or as a post-meal treat. Locals love it for its soothing taste—warm enough to calm the stomach (especially after spicy food like Lamian) and sweet enough to satisfy cravings without being cloying. It’s a staple at breakfast stalls and dessert shops across Lanzhou.</p>
+                                </div>
+                                <div id="spy3-2" class="mb-4">
+                                    <h5 class="fw-semibold mb-2">Taste</h5>
+                                    <p class="text-sm text-muted">Fermented Rice: Soft, chewy, and slightly sweet—with a subtle tang from fermentation; no harsh alcohol taste.</p>
+                                    <p class="text-sm text-muted">Soup: Warm, creamy, and mild—absorbs the rice’s sweetness, with a hint of floral aroma from goji berries.</p>
+                                    <p class="text-sm text-muted">Toppings: Raisins add a burst of sweetness, goji berries add a mild tartness, and rice dumplings add extra chewiness. </p>
+                                    <p class="text-sm text-muted">Overall: Comforting, gentle, and warming—like a hug in a bowl, perfect for cool weather. </p>
+                                </div>
+                                <div id="spy3-4">
+                                    <h5 class="fw-semibold mb-2">Price</h5>
+                                    <p class="text-sm text-muted">Breakfast Stalls: 6–8 CNY/bowl (basic version with raisins and goji berries). </p>
+                                    <p class="text-sm text-muted">Dessert Shops: 10–15 CNY/bowl (premium version with handmade tangyuan and extra toppings like red dates).</p>
+                                    <p class="text-sm text-muted">Restaurants: 8–12 CNY/bowl (served as a dessert after meals, often complimentary with large orders).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 py-0">
+        <div class="container-fluid text-center p1">
+            <p>© 2025 ChinaTravel. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+            <p>Designed with ♥ for a better user experience.</p>
+        </div>
+    </footer>
+</body>
+</html>
